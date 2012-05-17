@@ -24,6 +24,7 @@ class ApiTestCase(TestCase):
 
     def test_register(self):
         api = Api()
+        self.assertTrue(False) # wat
         self.assertEqual(len(api._registry), 0)
 
         api.register(NoteResource())
